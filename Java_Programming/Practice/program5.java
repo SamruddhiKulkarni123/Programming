@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 class ArithmeticOperations
 {
-    public int iNo1 = 0;
-    public int iNo2 = 0;
-    public int iAns = 0;
+    public int iNo1;
+    public int iNo2;
+    public int iAns;
 
     public ArithmeticOperations(int iNo1, int iNo2)
     {
