@@ -22,7 +22,7 @@ class program29
         Scanner sobj = new Scanner(System.in);
 
         System.out.println("Enter number : ");
-        n = sobj.nextInt();;
+        n = sobj.nextInt();
 
         for(i = n; i >= 1; i--)
         { 
