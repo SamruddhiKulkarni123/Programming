@@ -1,0 +1,26 @@
+// Accept string from user and dispaly it
+
+import java.util.*;
+
+class StringX
+{
+    public void Display(String str)
+    {
+        System.out.println("Received string is : "+str);
+    }
+}
+
+class program188
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        String str = null;
+        StringX strobj = new StringX();
+
+        System.out.println("Enter string : ");
+        str = sobj.nextLine();
+
+        strobj.Display(str);
+    }
+}
