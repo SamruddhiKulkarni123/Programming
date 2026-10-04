@@ -1,0 +1,32 @@
+// Accept two numbers from user and find BitWise AND , OR and EXOR of them
+
+import java.util.Scanner;
+
+class program221
+{
+    public static void main(String A[])
+    {
+        int No1 = 0;
+        int No2 = 0;
+        int Ans = 0;
+
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter first number : ");
+        No1 = sobj.nextInt();
+
+        System.out.println("Enter second number : ");
+        No2 = sobj.nextInt();
+
+        Ans = No1 & No2;
+        System.out.println("AND : "+Ans);
+
+        Ans = No1 | No2;
+        System.out.println("OR : "+Ans);
+
+        Ans = No1 ^ No2;
+        System.out.println("EXOR : "+Ans);
+
+
+    }
+}
