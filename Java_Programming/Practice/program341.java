@@ -1,0 +1,36 @@
+// Count number of words in string 
+
+import java.util.*;
+
+class StringX
+{
+    int CountWords(String str)
+    {
+        str = str.trim();
+
+        str = str.replaceAll("\\s+"," ");
+        
+        String Tokens[] = str.split(" ");
+
+        return Tokens.length;
+
+    }
+}
+class program341
+{
+    public static void main(String A[]) throws Exception
+    {
+        StringX strobj = new StringX();
+        int iRet = 0;
+        Scanner sobj = new Scanner(System.in);
+
+        String str =null;
+
+        System.out.println("Enter string : ");
+        str = sobj.nextLine();
+
+        iRet = strobj.CountWords(str);
+        System.out.println("Number of words are :"+iRet);
+
+    }
+}
