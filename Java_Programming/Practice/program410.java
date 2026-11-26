@@ -1,0 +1,44 @@
+// Accept string from user and display frequency of each word 
+
+import java.util.*;
+
+class program410
+{
+    public static void main(String A[])
+    {
+        HashMap <String, Integer> hobj = new HashMap <String, Integer>();
+
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter string :");
+        String str = sobj.nextLine();
+
+        str = str.trim();
+        str = str.replaceAll("\\s+"," ");
+        String Tokens[] = str.split(" ");
+
+
+        for(String s : Tokens)
+        {
+            if(hobj.containsKey(s))
+            {
+
+                hobj.put(s, hobj.get(s)+1);
+            }
+            else
+            {
+                hobj.put(s, 1);
+            }
+            
+        }
+
+        System.out.println("Frequency of each word is :");
+
+        for(String sValue : hobj.keySet())
+        {
+            System.out.println(sValue+ " : "+hobj.get(sValue));
+        }
+
+        
+    }
+}
